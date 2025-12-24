@@ -10,7 +10,7 @@ let
         (builtins.map
           (line:
             if util.isSectionHeading line then
-              line
+              util.trimSectionHeading line
             else if util.isEmptyLine line then
               null
             else if util.isContentLine line then

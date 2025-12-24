@@ -8,4 +8,5 @@ lib:
             parts = lib.strings.splitString "=" line;
         in
             { key = builtins.head parts; value = lib.last parts; };
+    trimSectionHeading = line: builtins.substring 1 ((builtins.stringLength line )- 2) line;
 }
