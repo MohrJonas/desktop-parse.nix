@@ -13,7 +13,7 @@ nix-repl> ret = parser.parseDesktopFileString "[Desktop Entry]\nActions=new-priv
 
 nix-repl> :p ret
 {
-  "[Desktop Entry]" = [
+  "Desktop Entry" = [
     {
       key = "Actions";
       value = "new-private-window;new-window;profile-manager-window";
